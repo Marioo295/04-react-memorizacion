@@ -13,20 +13,6 @@ function App() {
                     rel="noreferrer"
                 >Memorización</a>
             </h3>
-            <h3>
-                <a 
-                    href="https://es.reactjs.org/docs/hooks-reference.html#usecallback"
-                    target="_blank"
-                    rel="noreferrer"
-                >UseCallback</a>
-            </h3>
-            <h3>
-                <a 
-                    href="https://es.reactjs.org/docs/hooks-reference.html#usememo"
-                    target="_blank"
-                    rel="noreferrer"
-                >UseMemo</a>
-            </h3>
             <ul>
                 <li>Se encarga de memorizar un componente.</li>
                 <li>Lo vuelve a memorizar al momento de que sus <b>props</b> cambian.</li>
@@ -43,6 +29,25 @@ function App() {
                     </ul>
                 </li>
             </ul>
+            <h3>
+                <a 
+                    href="https://es.reactjs.org/docs/hooks-reference.html#usecallback"
+                    target="_blank"
+                    rel="noreferrer"
+                >UseCallback</a>
+            </h3>
+            <ul>
+                <li>Memoriza una función, para no volverla a definir en cada render.</li>
+                <li>Úsalo siempre que se pase una función como <b>prop</b> a un componente memorizado.</li>
+                <li>Úsalo siempre que se pase una función como parámetro de un efecto.</li>
+            </ul>
+            <h3>
+                <a 
+                    href="https://es.reactjs.org/docs/hooks-reference.html#usememo"
+                    target="_blank"
+                    rel="noreferrer"
+                >UseMemo</a>
+            </h3>
             <hr></hr>
             <Contador></Contador>
         </div>
