@@ -1,7 +1,21 @@
-import {memo} from "react";
+import { memo, useMemo } from "react";
 
 const ContadorHijo = ( {contador, sumar, restar} ) => {
+    /* let superNum = 0;
+    for (let i=0; i<1000000000; i++) {
+        superNum++;
+    }; */
+    const superNum = useMemo(() => {
+         let numero = 0;
+
+        for (let i=0; i<1000000000; i++) {
+            numero++;
+        }
+        return numero; 
+    }, []);
+
     console.log("Hijo contador se renderiza");
+
     return (
         <div style={{border: "thin solid #000", margin: "1rem", padding: "1rem"}}>
             <h2>Hijo del contador</h2>
@@ -10,6 +24,7 @@ const ContadorHijo = ( {contador, sumar, restar} ) => {
                 <button onClick={sumar}>+</button>
                 <button onClick={restar}>-</button>
             </nav>
+            <h3>{superNum}</h3>
         </div>
     );
 };

@@ -11,7 +11,7 @@ function App() {
                     href="https://es.reactjs.org/docs/react-api.html#reactmemo"
                     target="_blank"
                     rel="noreferrer"
-                >Memorización</a>
+                >React memorización</a>
             </h3>
             <ul>
                 <li>Se encarga de memorizar un componente.</li>
@@ -34,7 +34,7 @@ function App() {
                     href="https://es.reactjs.org/docs/hooks-reference.html#usecallback"
                     target="_blank"
                     rel="noreferrer"
-                >UseCallback</a>
+                >Memorización: useCallback</a>
             </h3>
             <ul>
                 <li>Memoriza una función, para no volverla a definir en cada render.</li>
@@ -46,8 +46,13 @@ function App() {
                     href="https://es.reactjs.org/docs/hooks-reference.html#usememo"
                     target="_blank"
                     rel="noreferrer"
-                >UseMemo</a>
+                >Memorización: useMemo</a>
             </h3>
+            <ul>
+                <li>Memoriza un valor calculado, es decir, el resultado de una función.</li>
+                <li>Genera propiedades computadas.</li>
+                <li>Úsalo en procesos pesados.</li>
+            </ul>
             <hr></hr>
             <Contador></Contador>
         </div>
